@@ -12,7 +12,7 @@
 email: tester1234@gmail.com <br>
 password: tester1234
 
-![image](https://user-images.githubusercontent.com/64442298/122502939-66be3c80-cfac-11eb-82cd-c5c07d2b3a5e.png)
+![image](https://imgur.com/GPhdNX2.jpg)
 
 
 ## How It's Made:
