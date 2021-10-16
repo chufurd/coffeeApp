@@ -1,12 +1,11 @@
 
 <h1 align="center">
-  <img src="https://user-images.githubusercontent.com/64442298/122506015-58731f00-cfb2-11eb-8680-4812796e44f9.png" width="224px"/><br/>
-  Comal <br>
-  Latinx stories told through the lens of food
+  <img src="https://imgur.com/3QTf0j6" width="224px"/><br/>
+  CoFree <br>
+  Saving the world one cup of Cofee at a time.
 </h1>
 <!-- 
-# Comal - Latinx stories told through the lens of food
-A place for Latinx families to document, share, and discover family recipes. -->
+# Cofree - A place to practice your home barista skills and help your neighbor. -->
 
 **Link to project:** https://new-shmup-api.herokuapp.com/ <br>
 **Demo User** <br>
