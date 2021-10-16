@@ -1,6 +1,6 @@
 
 <h1 align="center">
-  <img src="https://imgur.com/3QTf0j6" width="224px"/><br/>
+  <img src="https://imgur.com/3QTf0j6.jpg" width="224px"/><br/>
   CoFree <br>
   Saving the world one cup of Cofee at a time.
 </h1>
