@@ -1,0 +1,65 @@
+
+
+<%- include('partials/logged-in-header') -%>
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="row">
+  <div class="row justify-content-center mt-5">
+    <div class="col-6">
+      <h2><%= post.title %></h2>
+      <p><strong> Created On:</strong> <%= post.createdAt %></p>
+
+      <img src="<%= post.image%>" class="img-fluid" alt="Responsive image">
+      <div class="col-md-6">
+        <h3 class="display-4">Recipe</h3>
+
+        <h2>Ingredients</h2> <hr class="style1">
+        <ul class="list-unstyled">
+        <% for(var i=0; i<post.ingredients.length; i++) {%>
+            <li class="p-1 g-2"><%= post.ingredients[i] %></li>
+            <% } %>
+          </ul>
+          <h2>Contact Info</h2> <hr class="style1">
+          <ol class="list-group list-group-numbered">
+            <% for(var i=0; i<post.directions.length; i++) {%>
+            <li class="p-1"><%= post.directions[i] %></li>
+            <% } %>
+          </ol>
+      </div>
+      <br>
+      <div class="row justify-content-between">
+
+
+        <form
+          class="col justify-content-end"
+          action="/post/bookmarkPost/<%= post.id %>?_method=PUT"
+          method="POST"
+        >
+        <button class="<%if(post.bookmarks.includes(user.id)){ %> bi bi-bookmark-fill<%} else { %> bi bi-bookmark <% }%>
+          btn btn-primary" type="submit"></button>
+        </form>
+
+        <%if(post.user == user.id){ %>
+
+        <form
+          action="/post/deletePost/<%= post.id %>?_method=DELETE"
+          method="POST"
+          class="col-3"
+        >
+          <button class="btn btn-primary fa fa-trash" type="submit"></button>
+        </form>
+        <%}%>
+      </div>
+    </div>
+    <div class="col-3 mt-5">
+      <!-- <p><%= post.caption %></p> -->
+    </div>
+
+  </div>
+</div>
+
+<%- include('partials/footer') -%>
